@@ -1,0 +1,40 @@
+{
+  "name": "painting",
+  "build": {
+    "install": "npm ci --no-audit --no-fund",
+    "command": "npm run build",
+    "output": "dist"
+  },
+  "primaryColor": "#86b42f",
+  "colorVariants": [
+    { "find": "#5f8724", "factor": 0.72 },
+    { "find": "#5c8420", "factor": 0.7 },
+    { "find": "#97bf3b", "factor": 1.12 },
+    { "find": "#b6e25a", "factor": 1.35 },
+    { "find": "#eff6df", "tint": 0.87 },
+    { "find": "134, 180, 47", "rgb": true },
+    { "find": "134,180,47", "rgb": true },
+    { "find": "94, 132, 32", "rgb": true, "factor": 0.73 },
+    { "find": "95, 135, 36", "rgb": true, "factor": 0.74 },
+    { "find": "85, 122, 21", "rgb": true, "factor": 0.66 }
+  ],
+  "logoTargets": [
+    "src/assets/wess-logo.png",
+    "public/favicon.png"
+  ],
+  "removeFiles": ["wrangler.toml"],
+  "replacements": [
+    { "find": "Wess Painting &amp; Renovation Team", "replace": "{{business_name}}" },
+    { "find": "Wess Painting & Renovation Team", "replace": "{{business_name}}" },
+    { "find": "Wess Painting &amp; Renovation", "replace": "{{business_name}}" },
+    { "find": "Wess Painting & Renovation", "replace": "{{business_name}}" },
+    { "find": "Wess Painting", "replace": "{{business_name}}" },
+    { "find": "Wess and his team", "replace": "The crew" },
+    { "find": "About Wess", "replace": "About Us" },
+    { "find": "Toronto, ON", "replace": "{{service_area}}" },
+    { "find": "Toronto", "replace": "{{service_area}}" },
+    { "find": "(416) 555-0198", "replace": "{{phone_formatted}}" },
+    { "find": "+14165550198", "replace": "{{phone_e164}}" },
+    { "find": "info@wesspainting.com", "replace": "{{email}}" }
+  ]
+}
