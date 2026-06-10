@@ -35,6 +35,7 @@
     { "find": "Toronto", "replace": "{{service_area}}" },
     { "find": "(416) 555-0198", "replace": "{{phone_formatted}}" },
     { "find": "+14165550198", "replace": "{{phone_e164}}" },
-    { "find": "info@wesspainting.com", "replace": "{{email}}" }
+    { "find": "info@wesspainting.com", "replace": "{{email}}" },
+    { "find": "https://www.facebook.com/profile.php?id=61589994356667&sk=photos", "replace": "{{facebook}}" }
   ]
 }
