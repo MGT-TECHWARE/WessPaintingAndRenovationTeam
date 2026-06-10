@@ -1,0 +1,13 @@
+{
+  "stale_from_template": [
+    "Soft Wash Certified",
+    "Lorem ipsum",
+    "{client_name}",
+    "{phone}",
+    "(555) 555-5555",
+    "your@email.com",
+    "Acme",
+    "Example"
+  ],
+  "industry_specific_to_remove": []
+}
